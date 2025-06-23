@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card Legendz</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; background:#111; color:#eee; }
+    .container { width:90%; max-width:600px; margin:auto; padding:20px; }
+    header { text-align:center; margin-top:20px; }
+    header img { max-width:150px; }
+    header h1 { font-size:1.8rem; margin:10px 0; }
+    .btn { display:inline-block; background:#E3B000; color:#111; padding:12px 24px; border:none; border-radius:4px; text-decoration:none; font-weight:bold; }
+    section { margin:40px 0; }
+    .features { display:flex; flex-wrap:wrap; gap:10px; }
+    .feature { flex:1 1 calc(33% - 10px); background:#222; padding:15px; text-align:center; border-radius:5px; }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .card { background:#222; padding:10px; border-radius:5px; text-align:center; }
+    .card img { width:100%; height:auto; }
+    footer { text-align:center; padding:20px 0; }
+    .social a { margin:0 5px; color:#E3B000; text-decoration:none; font-weight:bold; }
+    @media(max-width:500px){
+      .features, .cards { flex-direction:column; grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://via.placeholder.com/150x150?text=Logo" alt="Card Legendz Logo">
+      <h1>Buy • Sell • Trade</h1>
+      <a href="#" class="btn">Get Started</a>
+    </header>
+
+    <section id="about">
+      <h2>What We Do</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Live Breaks</h3>
+          <p>Watch packs opened in real time.</p>
+        </div>
+        <div class="feature">
+          <h3>Rare Cards</h3>
+          <p>Explore exclusive, hard-to-find finds.</p>
+        </div>
+        <div class="feature">
+          <h3>Community</h3>
+          <p>Join our trusted trading circle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards">
+      <h2>Featured Cards</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x400?text=Card+1" alt="Featured Card 1">
+          <p>$199</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x400?text=Card+2" alt="Featured Card 2">
+          <p>$299</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x400?text=Card+3" alt="Featured Card 3">
+          <p>$149</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x400?text=Card+4" alt="Featured Card 4">
+          <p>$249</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2>Connect With Us</h2>
+      <div class="social">
+        <a href="#">Instagram</a> · 
+        <a href="#">YouTube</a> · 
+        <a href="tel:+1234567890">Call Us</a>
+      </div>
+      <p>&copy; 2025 Card Legendz</p>
+    </footer>
+  </div>
+</body>
+</html>
